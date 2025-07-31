@@ -14,6 +14,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JulyAndroid">
         <activity
+            android:name=".ShareMediaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SpinnerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Visibility"
+            android:exported="false" />
+        <activity
+            android:name=".BroadCastActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentActivity"
+            android:exported="false" />
+        <activity
             android:name=".RecyclerViewActivity"
             android:exported="false" />
         <activity
