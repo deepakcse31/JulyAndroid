@@ -14,10 +14,10 @@ import java.util.List;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
 
-    private List<MyListData> listdata;
+    private List<Search> listdata;
     private Context context;
 
-    public RecyclerViewAdapter(List<MyListData> listdata, Context context) {
+    public RecyclerViewAdapter(List<Search> listdata, Context context) {
         this.listdata = listdata;
         this.context = context;
     }
@@ -33,8 +33,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.tvname.setText(listdata.get(position).getName());
-        holder.desc.setText(listdata.get(position).getDesc());
+        holder.tvname.setText(listdata.get(position).getTitle());
+        holder.desc.setText(listdata.get(position).getType());
        // holder.imageView.setImageResource(listdata.get(position).getImg());
     }
 
